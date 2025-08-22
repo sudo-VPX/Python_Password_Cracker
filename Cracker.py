@@ -36,7 +36,7 @@ def Max_Attempts():
 
 # All Chracters Allowed Yet
 
-All_Char = list(string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation)
+All_Char = list(string.ascii_lowercase + string.ascii_uppercase + string.digits + " " + string.punctuation)
 All_Char_Len = len(All_Char)
 All_Char_Print = " , ".join(str(Char) for Char in All_Char)
 
@@ -62,6 +62,8 @@ print("")
 print ( "_" * 100 )
 print("")
 Password = str(input("Enter Your Password ---> "))
+print("Write N If You Don't Want to Give Below Details")
+User_Specific_Password_Length = input("What Is Length Of Your Password (Optional) -----> ")
 Length_Password = len(Password)
 print("")
 print ( "_" * 100 )
@@ -70,7 +72,9 @@ Max_Attempts()
 
 # Main Cracker
 
-# Will Code Soon { Good Night }
+for i in range(0,1):
+    print(All_Char[i])
+    i=i+1
 
 # Exit Pannel
 
